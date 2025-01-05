@@ -1,0 +1,116 @@
+/* src/styles/App.css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.app {
+  background-color: #F8F9FB;
+  min-height: 100vh;
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #E4E9F2;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-start {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  height: 32px;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+.search-input {
+  background-color: #F1F4F8;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px 8px 40px;
+  width: 240px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.nav-end {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: none;
+  color: #63779C;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.nav-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-button span {
+  font-weight: 500;
+}
+
+.nav-button.active {
+  color: #2F88FF;
+  border-bottom: 2px solid #2F88FF;
+}
+
+.profile-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-content {
+  max-width: 680px;
+  margin: 24px auto;
+  padding: 0 20px;
+}

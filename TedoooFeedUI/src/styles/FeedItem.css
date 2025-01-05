@@ -1,0 +1,141 @@
+/* src/styles/FeedItem.css */
+.post {
+  background: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.user-info {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user-name-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-name {
+  font-weight: 500;
+  color: #2D3748;
+  font-size: 14px;
+}
+
+.shop-name {
+  font-size: 14px;
+  color: #63779C;
+  font-weight: 400;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #63779C;
+}
+
+.post-text {
+  color: #2D3748;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.post-images {
+  margin: 0 -16px;
+}
+
+.post-images.grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.post-stats {
+  display: flex;
+  justify-content: space-between; /* Push items to the edges */
+  align-items: center; /* Vertically aligns items */
+  padding: 12px 0px; /* Add consistent padding */
+  border-bottom: 1px solid #E4E9F2; /* Separator for visual clarity */
+}
+
+.stats-item {
+  display: flex;
+  align-items: center; /* Aligns icon and text vertically */
+  gap: 6px; /* Space between icon and text */
+  color: #63779C;
+  font-size: 14px;
+}
+
+.stats-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: center; /* Center the action buttons */
+  align-items: center; /* Ensure vertical alignment */
+  gap: 20%; /* Add consistent gap between "Like" and "Comment" */
+  margin-top: 6px;
+}
+
+
+.action-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #63779C;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.action-button:hover {
+  background-color: #F1F4F8;
+}
+
+.action-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.action-button.liked {
+  color: #2F88FF;
+}
+
+.action-button.liked img {
+  filter: brightness(0) saturate(100%) invert(43%) sepia(98%) saturate(1540%) hue-rotate(194deg) brightness(104%) contrast(98%);
+}
